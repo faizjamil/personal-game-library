@@ -1,0 +1,29 @@
+{
+  "name": "personal-game-library",
+  "version": "0.1.0",
+  "description": "App for keeping track of your ever increasing game library",
+  "main": "lib/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build:live",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec ts-node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faizjamil/personal-game-library.git"
+  },
+  "author": "Faizan Jamil",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/faizjamil/personal-game-library/issues"
+  },
+  "homepage": "https://github.com/faizjamil/personal-game-library#readme",
+  "devDependencies": {
+    "@types/node": "^14.0.13",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.6"
+  },
+  "dependencies": {}
+}
