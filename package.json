@@ -4,7 +4,10 @@
   "description": "App for keeping track of your ever increasing game library",
   "main": "lib/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.ts",
+    "dev:debug": "nodemon --inspect src/index.ts",
+    "tsc": "npx tsc"
   },
   "repository": {
     "type": "git",
@@ -17,9 +20,13 @@
   },
   "homepage": "https://github.com/faizjamil/personal-game-library#readme",
   "devDependencies": {
+    "@types/express": "^4.17.6",
     "@types/node": "^14.0.13",
     "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2",
     "typescript": "^3.9.6"
   },
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
