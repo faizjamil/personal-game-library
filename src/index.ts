@@ -1,6 +1,5 @@
 import express from 'express';
 const port = 3000;
-const app: express.Application = express();
+const app = express();
 app.get('/', (req: express.Request, res: express.Response) => res.send('Hello World!'));
-
-app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));
+app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
