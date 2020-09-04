@@ -146,3 +146,6 @@ dist/**/*
 
 # ignore yarn.lock
 yarn.lock
+
+# ignore test npm projects
+passport_test

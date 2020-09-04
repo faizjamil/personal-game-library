@@ -1,8 +1,9 @@
 {
     "env": {
         "commonjs": true,
-        "es2020": true,
-        "node": true
+        "node": true,
+        "jquery": true,
+        "es2017": true
     },
     "extends": [
         "eslint:recommended",
@@ -11,7 +12,7 @@
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "ecmaVersion": 2020,
+        "ecmaVersion": 2017,
         "tsconfigRootDir": "./",
         "project": ["tsconfig.json"]
     },
@@ -19,5 +20,6 @@
         "@typescript-eslint"
     ],
     "rules": {
+
     }
 }
