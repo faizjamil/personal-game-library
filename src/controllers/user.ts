@@ -12,6 +12,11 @@ const read = (req: Request, res: Response, next: NextFunction): void => {
     res.status(200);
 }
 const register = (req: Request, res: Response, next: NextFunction): void => {
+    // we want to read the input friom a request
+    // in the request body will be a username, email, and password.
+    // we will take the username, we salt and hash the password, then we insert that user into the database
+    
+    
     res.send("register function works");
     res.status(200);
 }
