@@ -9,6 +9,8 @@ app.get('/', (req: express.Request, res: express.Response) => {
     res.status(200);
     
 });
+
+
 app.listen(port, () => 
     console.log(`Example app listening at http://localhost:${port}`)
 
