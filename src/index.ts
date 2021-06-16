@@ -5,7 +5,7 @@ const port = 3000 || process.env.PORT;
 const app: Application = express();
 app.use('/users', userRouter);
 app.get('/', (req: express.Request, res: express.Response) => {
-    res.send('Hello World! test')
+    res.send('Hello World! nodemon test')
     
     res.status(200);
     
