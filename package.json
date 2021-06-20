@@ -4,7 +4,7 @@
   "description": "App for keeping track of your ever increasing game library",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --require ts-node/register",
     "dev": "nodemon src/index.ts"
   },
   "repository": {
@@ -17,6 +17,10 @@
     "url": "https://github.com/faizjamil/personal-game-library/issues"
   },
   "homepage": "https://github.com/faizjamil/personal-game-library#readme",
+  "directories": {
+    "src": "./src",
+    "test": "./src"
+  },
   "devDependencies": {
     "@types/async": "^3.2.5",
     "@types/bcrypt": "^3.0.0",
